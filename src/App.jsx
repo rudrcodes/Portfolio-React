@@ -8,16 +8,13 @@ function App() {
 
   return (
     <motion.main
-      className="overflow-x-hidden  h-screen flex justify-between items-center flex-col bg-green-600"
+      className="overflow-x-hidden  h-screen flex justify-between items-center flex-col w-screen "
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ ease: "easeInOut", duration: 0.9, delay: 0.4 }}
     >
       <Navbar />
-      <motion.div className="">
-      {/* <motion.div className="h-[calc(100vh-140px)]"> */}
-        <AllRoutes />
-      </motion.div>
+      <AllRoutes />
       <Footer />
     </motion.main>
   )

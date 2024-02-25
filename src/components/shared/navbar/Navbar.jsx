@@ -40,9 +40,9 @@ const Navbar = () => {
     }
   };
 
-
+// TODO : Glassy navbar ??
   return (
-    <motion.div className=" bg-red-200 py-2 px-10 flex justify-between items-center w-screen">
+    <motion.div className="max-h-[100px] bg-red-200 py-2 px-10 flex justify-between items-center w-screen">
       <motion.div className="relative" >
         <motion.a href="/"
           initial="rest"

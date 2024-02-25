@@ -23,16 +23,16 @@ const Footer = () => {
     },
     {
       name: "Coding Ninjas",
-      logo: <SiCodingninjas  className="w-8 h-8" />,
+      logo: <SiCodingninjas className="w-8 h-8" />,
       href: "https://www.codingninjas.com/studio/profile/rudrcodes"
     },
 
   ];
 
   // socials ko backend se fetch krun?
-  
+
   return (
-    <motion.div className=" bg-red-400 py-3.5 px-10 flex justify-between items-center w-screen">
+    <motion.div className="max-h-[100px] bg-red-400 py-3.5 px-10 flex justify-between items-center w-screen">
 
       <div className="text-[18px] text-black">&copy; 2024 Rudransh Aggarwal </div>
 

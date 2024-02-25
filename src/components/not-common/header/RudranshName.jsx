@@ -2,8 +2,9 @@ import { motion } from "framer-motion"
 export const RudranshName = () => {
     const nameMotion = {
         rest: {
-            opacity: 0.5,
+            opacity: 0.2,
             // y: 0,
+            // width: 10,
             height: 0,
             transition: {
                 duration: 0.4,
@@ -13,7 +14,8 @@ export const RudranshName = () => {
         },
         hover: {
             // y: "200%",
-            height: "100%",
+            // width: "110%",
+            height: "110%",
             transition: {
                 duration: 0.5,
                 type: "bounce",
@@ -22,21 +24,19 @@ export const RudranshName = () => {
         }
     };
     return (
-        <motion.div
-            initial={{ opacity: 1, y: 100 }}
-            animate={{ opacity: 1, y: -10 }}
-            transition={{
-                duration: 1.2,
-                delay: 0.7,
-                ease: "easeInOut"
-            }}
 
-            className="relative cursor-none flex justify-start items-center flex-col" >
+        <motion.div className="overflow-hidden py-2  text-white font-bold " initial="rest"
+            animate="rest"
+            whileHover="hover">
+            <motion.div className="relative cursor-none flex justify-start items-center flex-col" >
 
-            <motion.span variants={nameMotion} className="bg-blue-500  w-full absolute " >&nbsp;</motion.span>
-            <motion.h1 className="text-6xl">
-                Rudransh Aggarwal
-            </motion.h1>
+                <motion.span variants={nameMotion} className="bg-gray-100  w-full absolute " >&nbsp;</motion.span>
+                <motion.h1 className="text-6xl  rounded-md">
+                    {/* <motion.h1 className="text-6xl px-3 py-1 rounded-md"> */}
+                    Rudransh Aggarwal ,
+                </motion.h1>
+
+            </motion.div>
         </motion.div>
     )
 }
