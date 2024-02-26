@@ -8,7 +8,7 @@ function App() {
 
   return (
     <motion.main
-      className="overflow-x-hidden  h-screen flex justify-between items-center flex-col w-screen "
+      className="overflow-x-hidden  h-screen flex justify-between items-center flex-col w-screen bg-[#1A1A1A]"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ ease: "easeInOut", duration: 0.9, delay: 0.4 }}

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion"
 import MobileNav from "./MobileNav"
 import DesktopNav from "./DesktopNav"
+import logo  from "../../../assets/logo.svg"
 const Navbar = () => {
   const links = [
     {
@@ -40,16 +41,17 @@ const Navbar = () => {
     }
   };
 
-// TODO : Glassy navbar ??
+  // TODO : Glassy navbar ??
   return (
-    <motion.div className="max-h-[100px] bg-red-200 py-2 px-10 flex justify-between items-center w-screen">
-      <motion.div className="relative" >
+    <motion.div className="max-h-[100px]   bg-[#F9F4F5]  border-b-4  py-2 px-10 flex justify-between items-center w-screen rounded-b-3xl">
+      <motion.div className="relative bg-red-900 rounded-md p-1" >
         <motion.a href="/"
           initial="rest"
           animate="rest"
+      
 
         >
-          RudranshAggarwal
+          <img src={logo} alt="logo" className="h-10 "/>
         </motion.a>
         {/* <motion.div
           initial="rest"

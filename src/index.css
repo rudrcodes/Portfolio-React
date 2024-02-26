@@ -17,3 +17,11 @@
     stroke-linejoin: round;
     stroke-linecap: round;
 }
+/* 
+.bg-my-class {
+    background-image: url("/src/assets/css-pattern-by-magicpattern.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    opacity: 1;
+} */

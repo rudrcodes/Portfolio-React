@@ -37,7 +37,7 @@ const DesktopNav = ({ links }) => {
             y: 0,
             display: "block",
             transition: {
-                duration: 0.2,
+                duration: 0.4,
                 type: "tween",
                 ease: "easeIn"
             },
@@ -69,7 +69,7 @@ const DesktopNav = ({ links }) => {
             y: 0,
             display: "block",
             transition: {
-                duration: 0.3,
+                duration: 0.4,
                 type: "tween",
                 ease: "easeOut"
             }
@@ -78,7 +78,7 @@ const DesktopNav = ({ links }) => {
 
 
     return (
-        <motion.div className=' hidden md:flex bg-green-400 text-black w-[400px] justify-center items-center gap-3 text-[18px]'>
+        <motion.div className=' hidden md:flex  text-black w-[400px] justify-center items-center gap-3 text-[18px]'>
 
             {links?.map((link) => {
                 return (
@@ -108,7 +108,7 @@ const DesktopNav = ({ links }) => {
                 animate="rest"
                 whileHover="hover"
                 className="overflow-hidden flex justify-center items-center flex-col  border-1 border-black rounded-md h-[30px] w-[100px]  cursor-pointer
-                hover:border-[#1234] hover:border-4 hover:transition-all  delay-75 duration-75
+                hover:border-[#1234] hover:border-2 hover:transition-all  delay-75 duration-75
                 "
             >
 

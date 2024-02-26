@@ -5,6 +5,8 @@ import { RudranshName } from "../../components/not-common/header/RudranshName";
 import { SpringAnimation } from "../../components/not-common/spring-animation";
 import { CiMail } from "react-icons/ci";
 import { SvgNameAnimation } from "../../components/not-common/SvgNameAnimation";
+import { WavyBackground } from "../../components/wavy-background";
+import { BackgroundBeams } from "../../components/background-beams";
 
 
 // Rudransh Aggarwal ko inital load pe coh jo random chars vali animation h voh krunga, jisme random chars ate hn 
@@ -23,12 +25,14 @@ function Home() {
             // x: 10,
             // y: 10,
             // scale: 1
-            transform: "translateX(10px) translateY(12px)"
+            transform: "translateX(7px) translateY(7px)",
+
         },
         hover: {
             // x: -4,
             // y: -4,
-            transform: "translateX(1px) translateY(1px)",
+            transform: "translateX(0px) translateY(0px)",
+
             // scale: 1.1
         }
     }
@@ -43,11 +47,14 @@ function Home() {
     // }
 
     return (
-        <motion.div className="overflow-hidden flex justify-center  items-start w-full  bg-[#1A1A1A] gap-2 h-full text-white  px-10 py-10">
-            <motion.div className="flex justify-center w-full items-start text-start flex-col h-full gap-5">
+        // bg-[#2C1A1D]
+        // bg-[#1A1A1A]
+        <motion.div className="overflow-hidden flex justify-center  items-center w-full   bg-[#2C1A1D] gap-2 h-full text-white  px-10 py-10 bg-my-class">
+            {/* <WavyBackground className="max-w-4xl mx-auto pb-40"> */}
+            <motion.div className="flex justify-center w-full items-center md:items-start text-center md:text-start flex-col h-full  gap-10">
 
-                <motion.div className="flex justify-center w-[90%] items-start text-start flex-col ">
-                    <motion.div className="overflow-hidden px-3  py-5 bg-red-200 rounded-md"
+                <motion.div className="flex justify-center w-[90%] items-center md:items-start  text-center md:text-start flex-col gap-5 ">
+                    <motion.div className="overflow-hidden px-2 py-3 md:px-3 md:py-5 bg-red-200 rounded-md"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{
@@ -68,7 +75,7 @@ function Home() {
                             }}
 
                         >
-                            <span className="text-4xl">
+                            <span className="text-2xl md:text-4xl">
                                 👋 Hi there! I{"'"}m
                             </span>
 
@@ -76,7 +83,7 @@ function Home() {
                         </motion.div>
                     </motion.div>
 
-                    <motion.div className="overflow-hidden  py-3  ">
+                    <motion.div className="overflow-hidden  px-2 md:px-3   ">
                         <motion.div className="flex justify-center items-center    h-full"
                             initial={{ opacity: 1, y: 100 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -97,7 +104,7 @@ function Home() {
                         </motion.div>
                     </motion.div>
 
-                    <motion.div className="overflow-hidden px-3 py-5 bg-yellow-400 rounded-md"
+                    <motion.div className="overflow-hidden px-2 py-3 md:px-3 md:py-5 bg-yellow-400 rounded-md"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{
@@ -119,7 +126,7 @@ function Home() {
 
                         >
 
-                            <span className="text-4xl">
+                            <span className="text-2xl md:text-4xl">
                                 Your friendly Full Stack Developer crafting digital wonders! 🚀✨
                             </span>
 
@@ -130,15 +137,32 @@ function Home() {
                 </motion.div>
 
                 {/* CTA Button */}
-                <motion.div className=" ">
-                    <motion.div className="border-4 rounded-md  border-red-900 flex justify-center bg-white items-center ">
-                        <motion.button className="border-4 rounded-md  flex justify-center items-center  gap-2 border-red-900  px-10 py-2  bg-white text-black text-bold text-2xl"
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{
+                        duration: 1.2,
+                        delay: 1,
+                        ease: "easeIn"
+                    }}
+
+                >
+                    <motion.div className="border-4 rounded-xl  border-l-red-900 
+                    border-r-blue-900
+                    border-t-green-900
+                    border-b-yellow-900
+                    flex bg-white justify-center  items-center ">
+                        <motion.button className="border-4 rounded-md  flex justify-center items-center  gap-2  border-l-red-900 
+                    border-r-blue-900
+                    border-t-green-900
+                    border-b-yellow-900  px-10 py-2  text-black text-bold text-2xl"
                             initial="rest"
                             animate="rest"
+                            // whileHover="hover"
                             whileTap="hover"
                             variants={buttonShiftAnimation}
                         >
-                            Mail me <CiMail size={20} />
+                            Mail me <CiMail size={24} />
 
                         </motion.button>
 
@@ -146,12 +170,11 @@ function Home() {
                 </motion.div>
 
             </motion.div>
-            <motion.div className="   h-full">
-
-                {/* <SvgNameAnimation/> */}
+            {/* <motion.div className="   h-full">
                 <SpringAnimation />
-            </motion.div>
-        </motion.div>
+            </motion.div> */}
+        </motion.div >
+
     )
 }
 
