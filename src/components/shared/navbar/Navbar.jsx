@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"
 import MobileNav from "./MobileNav"
 import DesktopNav from "./DesktopNav"
-import logo  from "../../../assets/logo.svg"
+import logo from "../../../assets/Group.svg"
 const Navbar = () => {
   const links = [
     {
@@ -20,6 +20,15 @@ const Navbar = () => {
     //   type: "button"
     // },
   ]
+
+  const imgHoverAnim = {
+    rest: {
+      scale: 1
+    },
+    hover: {
+      scale: 1.11
+    }
+  }
 
   const nameMotion = {
     rest: {
@@ -43,23 +52,16 @@ const Navbar = () => {
 
   // TODO : Glassy navbar ??
   return (
-    <motion.div className="max-h-[100px]   bg-[#F9F4F5]  border-b-4  py-2 px-10 flex justify-between items-center w-screen rounded-b-3xl">
-      <motion.div className="relative bg-red-900 rounded-md p-1" >
+    <motion.div className=" bg-[#F9F4F5]  border-b-4   px-10 flex justify-between items-center w-screen rounded-b-3xl">
+      <motion.div className="relative  rounded-md p-1" >
         <motion.a href="/"
           initial="rest"
           animate="rest"
-      
-
-        >
-          <img src={logo} alt="logo" className="h-10 "/>
-        </motion.a>
-        {/* <motion.div
-          initial="rest"
-          animate="rest"
           whileHover="hover"
-          variants={nameMotion}
-          className="bg-blue-500 h-[10px] w-full absolute hidden md:block" >&nbsp;</motion.div> */}
-        {/* TODO: Design a minimal name logo in AdobeXD or Figma */}
+        >
+          <motion.img variants={imgHoverAnim} src={logo} alt="logo" className="w-10 " />
+        </motion.a>
+
       </motion.div>
 
       <MobileNav />

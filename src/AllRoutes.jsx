@@ -1,5 +1,7 @@
+import { ToastContainer } from "react-toastify";
 import Home from "./pages/home/Home"
 import { Route, Routes } from "react-router-dom"
+import Projects from "./pages/projects/Projects";
 
 export const AllRoutes = () => {
 
@@ -10,7 +12,7 @@ export const AllRoutes = () => {
         },
         {
             path: "/projects",
-            element: <>Project</>
+            element: <Projects/>
         },
         {
             path: "/contact",

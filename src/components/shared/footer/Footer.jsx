@@ -31,35 +31,43 @@ const Footer = () => {
 
   // socials ko backend se fetch krun?
 
-  const hoverScaleAnimation={
-    rest:{
-      scale:1
+  const hoverScaleAnimation = {
+    rest: {
+      scale: 1
     },
-    hover:{
-      scale:1.2
+    hover: {
+      scale: 1.2
     },
-    transition:{
-      type:"easeIn",
-      duration:0.4
+    transition: {
+      type: "easeIn",
+      duration: 0.4
     }
   }
 
   return (
     // <motion.div className="max-h-[100px] bg-red-400 py-3.5 px-10 flex justify-between items-center w-screen">
-    <motion.div className="max-h-[140px]   bg-[#F9F4F5]  border-t-4  py-3.5 px-10 flex justify-between items-center w-screen rounded-t-3xl">
+    <motion.div className="max-h-[140px]   bg-[#F9F4F5]  border-t-4  py-3.5 px-10 flex justify-between items-center w-screen rounded-t-3xl flex-col md:flex-row flex-wrap sm:gap-1">
 
-  <div className="text-[16px] text-black "><span className="text-bold">&copy; 2024 </span>|<span className="text-bold"> Rudransh Aggarwal</span></div>
+      <motion.div className="text-[16px] text-black ">
+        <motion.span className="text-bold">&copy; 2024 </motion.span>|
+        <motion.span className="text-bold" > Rudransh Aggarwal</motion.span></motion.div>
+      {/* <motion.span
+        // initial={{scale:1}}
 
+        initial={{ scale: 1 }}
+        animate={{ scale: 1.4 }}
+        transition={{ repeat: Infinity, duration: 0.7, tpye: "ease" }}
+      >❤️‍🔥</motion.span> */}
       <div className=" flex justify-center items-center gap-7 ">
         {socials.map((social) => {
           return (
-            <motion.a 
-            initial="rest"
-            animate="rest"
-            whileHover="hover"
-            variants={hoverScaleAnimation}            
-            
-            href={social.href} key={social.name} target="_blank" >
+            <motion.a
+              initial="rest"
+              animate="rest"
+              whileHover="hover"
+              variants={hoverScaleAnimation}
+
+              href={social.href} key={social.name} target="_blank" >
               {social.logo}
             </motion.a>
           )

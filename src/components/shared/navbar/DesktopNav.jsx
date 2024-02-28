@@ -78,7 +78,7 @@ const DesktopNav = ({ links }) => {
 
 
     return (
-        <motion.div className=' hidden md:flex  text-black w-[400px] justify-center items-center gap-3 text-[18px]'>
+        <motion.div className=' hidden md:flex  text-black w-[400px] md:justify-center md:items-center gap-3 text-[18px] '>
 
             {links?.map((link) => {
                 return (
