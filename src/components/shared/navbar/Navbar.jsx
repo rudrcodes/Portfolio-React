@@ -52,7 +52,7 @@ const Navbar = () => {
 
   // TODO : Glassy navbar ??
   return (
-    <motion.div className=" bg-[#F9F4F5]  border-b-4   px-10 flex justify-between items-center w-screen rounded-b-3xl">
+    <motion.div className=" bg-[#F9F4F5]  border-b-4  px-10 flex justify-between items-center w-screen rounded-b-3xl">
       <motion.div className="relative  rounded-md p-1" >
         <motion.a href="/"
           initial="rest"

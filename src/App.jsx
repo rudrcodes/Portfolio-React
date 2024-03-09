@@ -18,8 +18,8 @@ function App() {
 
   return (
     <motion.main
-      className={`bg-white overflow-x-hidden h-screen flex justify-between items-center flex-col flex-1 w-screen `}
-      // className={`${path === "/" ? pathColors[0] : path === "/projects" ? pathColors[1] : pathColors[2]} overflow-x-hidden h-screen flex justify-between items-center flex-col flex-1 w-screen bg-[#2C1A1D] `}
+      // className={` bg-[#2C1A1D] overflow-x-hidden h-screen flex justify-between items-center flex-col flex-1 w-screen `}
+      className={`${path === "/" ? pathColors[0] : path === "/projects" ? pathColors[1] : pathColors[2]} overflow-x-hidden h-screen flex justify-between items-center flex-col flex-1 w-screen bg-[#2C1A1D] `}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ ease: "easeInOut", duration: 0.9, delay: 0.4 }}
