@@ -44,24 +44,24 @@ const Header = () => {
   };
 
   return (
-    <motion.section className="flex justify-center w-full items-center md:items-start text-center  flex-col  gap-10 m-4">
+    <motion.section className="flex justify-center w-full items-center md:items-start text-center  flex-col  gap-10 m-4 h-full">
       <motion.div className="flex justify-center w-full items-center text-center gap-5 ">
         <motion.div className="flex justify-center w-full items-center md:items-start  text-center md:text-start flex-col gap-5 ">
           <motion.div className="overflow-hidden px-2 py-3 md:px-3 md:py-5 bg-red-200 rounded-md w-full md:text-start sm:text-center"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{
-              duration: 1.2,
-              delay: 1,
-              ease: "easeIn"
-            }}
+            // initial={{ opacity: 0 }}
+            // animate={{ opacity: 1 }}
+            // transition={{
+            //   duration: 1.2,
+            //   delay: 1,
+            //   ease: "easeIn"
+            // }}
           >
             <motion.div className="flex md:justify-start justify-center text-center md:text-start items-center   text-black text-bold h-full"
               initial={{ opacity: 1, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
                 duration: 1.2,
-                delay: 0.7,
+                delay:0.7,
                 ease: "easeInOut"
               }}
 

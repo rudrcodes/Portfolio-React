@@ -3,6 +3,7 @@ import { motion } from "framer-motion"
 import SkillsTab from "../../components/not-common/SkillsTab";
 import AboutComp from "../../components/not-common/AboutComp";
 import Header from "../../components/not-common/header/Header";
+import WorkEx from "../../components/WorkEx";
 
 
 // Rudransh Aggarwal ko inital load pe coh jo random chars vali animation h voh krunga, jisme random chars ate hn 
@@ -28,24 +29,34 @@ function Home() {
 
     return (
 
-        <motion.div className=' bg-[#2C1A1D] flex-1 flex justify-center items-center text-white text-3xl font-bold w-full flex-col md:px-10 md:py-7 p-5   '>
+        <motion.div className=' bg-[#2C1A1D] flex-1 flex justify-center items-center text-white text-3xl font-bold w-full flex-col md:px-10 md:py-7 p-5   '
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+                duration: 1.2,
+                delay: 1,
+                ease: "easeIn"
+            }}
+        >
 
             {/* Section -1 */}
             <Header />
 
 
             {/* Section - 2 (About(Left) + Skills Tab(Right) )*/}
-            < motion.section className="flex justify-center items-center w-full flex-wrap" >
+            <AboutComp />
 
-                <motion.div className="md:w-[60%] w-full">
+            <SkillsTab />
+
+            {/* <WorkEx /> */}
+            {/* <motion.div className="md:w-[60%] w-full">
                     <AboutComp />
                 </motion.div>
                 <motion.div className="md:w-[40%] w-full">
 
                     <SkillsTab />
-                </motion.div>
+                </motion.div> */}
 
-            </motion.section >
 
 
             {/* Section - 3 (Projects)*/}
