@@ -117,10 +117,11 @@ const Header = () => {
           </motion.div>
         </motion.div>
 
+        {/* TODO */}
         <motion.div
-          className="inline-block cursor-none text-[100px] md:text-[200px] lg:text-[250px] pointer-events-none "
+          className="lg:inline-block cursor-none hidden lg:text-[250px] pointer-events-none "
           aria-disabled
-          
+
           animate={{
             x: [0, 5, -10, 0],
             y: [0, 15, 4, 0],
@@ -155,10 +156,10 @@ const Header = () => {
         border-t-green-900
         border-b-yellow-900
         flex bg-white justify-center  items-center ">
-          <motion.button className="bg-white border-4 rounded-md  flex justify-center items-end  gap-2  border-l-red-900 
+          <motion.button className="bg-white border-4 rounded-md  flex justify-center items-center  gap-2  border-l-red-900 
         border-r-blue-900
         border-t-green-900
-        border-b-yellow-900  px-10 py-2  text-black text-bold text-lg"
+    border-b-yellow-900  px-10 py-2  text-black text-bold text-sm md:text-lg"
             initial="rest"
             animate="rest"
             // whileHover="hover"
@@ -166,7 +167,7 @@ const Header = () => {
             variants={buttonShiftAnimation}
             onClick={copyText}
           >
-            Copy mail <CiMail size={26} />
+            Copy mail <CiMail />
 
           </motion.button>
 
