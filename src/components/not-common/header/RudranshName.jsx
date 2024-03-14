@@ -67,7 +67,7 @@ export const RudranshName = () => {
                 {/* <motion.div className="relative cursor-none flex justify-start items-center flex-col" > */}
 
                 {/* <motion.span variants={nameMotion} className="bg-gray-100  w-full absolute " >&nbsp;</motion.span> */}
-                <motion.h1 className=" text-2xl md:text-4xl lg:text-6xl  rounded-md flex justify-center items-center gap-3 "
+                <motion.h1 className=" text-xl md:text-3xl lg:text-5xl  rounded-md flex justify-center items-center gap-3 "
                 >
                     {/* <motion.h1 className="text-6xl px-3 py-1 rounded-md"> */}
                     {/* {nameArr.map((char) => {
@@ -104,7 +104,7 @@ export const RudranshName = () => {
                         // drag dragControls={controls}
                         animate={{ scale: 1, rotate: 360 }}
                         transition={{ duration: 7, repeat: Infinity, ease: 'linear' }}
-                    // className='pointer-events-none	select-none '
+                    className='pointer-events-none	select-none '
                     >
                         🌍
                     </motion.span>

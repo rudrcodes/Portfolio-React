@@ -13,9 +13,13 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {},
+    fontFamily: {
+      mono: 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
+      serif: 'ui-serif, Georgia, Cambria, "Times New Roman", Times, serif',
+    },
+    // plugins: [require("@tailwindcss/aspect-ratio"), addVariablesForColors],
+    plugins: [],
   },
-  // plugins: [require("@tailwindcss/aspect-ratio"), addVariablesForColors],
-  plugins: [],
 };
 
 // function addVariablesForColors({ addBase, theme }) {

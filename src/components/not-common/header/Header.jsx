@@ -89,40 +89,40 @@ const Header = () => {
       console.error("Failed to copy text:", err);
     }
   };
-  const dwnldResume = async () => {
-    try {
-      await navigator.clipboard.writeText("aggarwalrudransh@gmail.com");
-      console.log("Text copied successfully!");
-      toast('✅ Resume download successfully!', {
-        position: "top-center",
-        autoClose: 1500,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "dark",
-      });
-    } catch (err) {
-      toast.error('Error in copying mail!', {
-        position: "top-center",
-        autoClose: 1500,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "dark",
-      });
-      console.error("Failed to copy text:", err);
-    }
-  };
+  // const dwnldResume = async () => {
+  //   try {
+  //     await navigator.clipboard.writeText("aggarwalrudransh@gmail.com");
+  //     console.log("Text copied successfully!");
+  //     toast('✅ Resume download successfully!', {
+  //       position: "top-center",
+  //       autoClose: 1500,
+  //       hideProgressBar: false,
+  //       closeOnClick: true,
+  //       pauseOnHover: true,
+  //       draggable: true,
+  //       progress: undefined,
+  //       theme: "dark",
+  //     });
+  //   } catch (err) {
+  //     toast.error('Error in copying mail!', {
+  //       position: "top-center",
+  //       autoClose: 1500,
+  //       hideProgressBar: false,
+  //       closeOnClick: true,
+  //       pauseOnHover: true,
+  //       draggable: true,
+  //       progress: undefined,
+  //       theme: "dark",
+  //     });
+  //     console.error("Failed to copy text:", err);
+  //   }
+  // };
 
   return (
-    <motion.section className="flex justify-center w-full items-center md:items-start text-center  flex-col  gap-10 m-5">
+    <motion.section className="flex justify-center w-full items-center md:items-start text-center  flex-col  gap-7 m-5">
       <motion.div className="flex justify-center w-full items-center text-center gap-5 ">
         <motion.div className="flex justify-center w-full items-center md:items-start  text-center md:text-start flex-col gap-5 ">
-          <motion.div className="overflow-hidden px-2 py-3 md:px-3 md:py-5 bg-red-200 rounded-md w-full md:text-start sm:text-center"
+          <motion.div className="overflow-hidden px-2 py-3 md:px-3 md:py-5 bg-[#F7ECE1]  rounded-md w-full md:text-start sm:text-center"
           // initial={{ opacity: 0 }}
           // animate={{ opacity: 1 }}
           // transition={{
@@ -131,7 +131,7 @@ const Header = () => {
           //   ease: "easeIn"
           // }}
           >
-            <motion.div className="flex md:justify-start justify-center text-center md:text-start items-center   text-black text-bold h-full"
+            <motion.div className="flex md:justify-start justify-center text-center md:text-start items-center  text-black text-bold h-full tracking-tighter	"
               initial={{ opacity: 1, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
@@ -141,8 +141,8 @@ const Header = () => {
               }}
 
             >
-              <span className="text-xl md:text-2xl lg:text-4xl">
-                👋 Hi there! I{"'"}m
+              <span className="text-xl md:text-xl lg:text-4xl">
+                👋Hi there! I{"'"}m
               </span>
 
 
@@ -162,7 +162,7 @@ const Header = () => {
             </motion.div>
           </motion.div>
 
-          <motion.div className="overflow-hidden px-2 py-3 md:px-3 md:py-5 bg-yellow-400 rounded-md w-full text-start"
+          <motion.div className="overflow-hidden px-2 py-3 md:px-3 md:py-5 bg-yellow-400 rounded-md w-full text-start tracking-tighter	"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{
@@ -173,7 +173,7 @@ const Header = () => {
 
 
           >
-            <motion.div className="flex md:justify-start justify-center text-center md:text-start items-center   text-black text-bold h-full"
+            <motion.div className="flex md:justify-start justify-center text-center md:text-start items-center  text-black text-bold h-full"
               initial={{ opacity: 1, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
@@ -184,9 +184,11 @@ const Header = () => {
 
             >
 
-              <motion.div className="text-xl md:text-2xl lg:text-4xl inline-block">
+              {/* <motion.div className="text-xl md:text-2xl lg:text-4xl inline-block"> */}
+              <span className="text-xl md:text-xl lg:text-4xl">
                 Your friendly Full Stack Developer crafting digital wonders!
-              </motion.div>
+              </span>
+              {/* </motion.div> */}
 
             </motion.div>
           </motion.div>
@@ -194,7 +196,8 @@ const Header = () => {
 
         {/* TODO */}
         <motion.div
-          className="lg:inline-block cursor-none hidden lg:text-[250px] pointer-events-none "
+          className="lg:inline-block cursor-none hidden lg:text-[250px] pointer-events-none select-none"
+          
           aria-disabled
 
           animate={{
