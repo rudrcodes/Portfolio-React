@@ -268,8 +268,9 @@ const Header = () => {
             variants={buttonShiftAnimation}
           // onClick={copyText}
           >
-            <motion.a download href={resumePdf} className="flex justify-center items-center gap-2">
-              Resume  <TbDownload />
+            <motion.a download="Rudransh-Resume" href={resumePdf} className="flex justify-center items-center gap-2">
+              Resume
+              <TbDownload />
             </motion.a>
           </motion.button>
 
