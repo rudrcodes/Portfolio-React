@@ -119,7 +119,7 @@ const Header = () => {
   };
 
   return (
-    <motion.section className="flex justify-center w-full items-center md:items-start text-center  flex-col  gap-10 m-4 h-full">
+    <motion.section className="flex justify-center w-full items-center md:items-start text-center  flex-col  gap-10 m-5">
       <motion.div className="flex justify-center w-full items-center text-center gap-5 ">
         <motion.div className="flex justify-center w-full items-center md:items-start  text-center md:text-start flex-col gap-5 ">
           <motion.div className="overflow-hidden px-2 py-3 md:px-3 md:py-5 bg-red-200 rounded-md w-full md:text-start sm:text-center"
