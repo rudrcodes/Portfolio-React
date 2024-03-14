@@ -120,7 +120,6 @@ const DesktopNav = ({ links }) => {
                 </motion.button>
                 <motion.button variants={buttonAnimationDownload} >
                     <a download="Rudransh's Resume" href={resumePdf} >
-                        {/* <FaDownload /> */}
                         <TbDownload />
 
                     </a>

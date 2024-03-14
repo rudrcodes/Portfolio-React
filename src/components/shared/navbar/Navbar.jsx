@@ -64,8 +64,8 @@ const Navbar = () => {
 
       </motion.div>
 
-      <MobileNav />
-      <DesktopNav links={links} />
+      {/* <MobileNav />
+      <DesktopNav links={links} /> */}
 
 
 
