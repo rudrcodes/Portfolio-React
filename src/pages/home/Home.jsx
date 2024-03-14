@@ -29,7 +29,7 @@ function Home() {
 
     return (
 
-        <motion.div className='font-mono bg-[#131515]  flex justify-center items-center text-white text-3xl font-bold w-full flex-col md:px-10 md:py-3 p-5   '
+        <motion.div className='font-mono flex-1 bg-[#131515]  flex justify-center items-center text-white text-3xl font-bold w-full flex-col md:px-10 md:py-3 p-5   '
             // <motion.div className=' bg-[#2C1A1D] flex-1 flex justify-center items-center text-white text-3xl font-bold w-full flex-col md:px-10 md:py-7 p-5   '
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
