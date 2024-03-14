@@ -29,8 +29,8 @@ function Home() {
 
     return (
 
-        <motion.div className='font-mono bg-[#131515] flex-1 flex justify-center items-center text-white text-3xl font-bold w-full flex-col md:px-10 md:py-7 p-5   '
-        // <motion.div className=' bg-[#2C1A1D] flex-1 flex justify-center items-center text-white text-3xl font-bold w-full flex-col md:px-10 md:py-7 p-5   '
+        <motion.div className='font-mono bg-[#131515]  flex justify-center items-center text-white text-3xl font-bold w-full flex-col md:px-10 md:py-3 p-5   '
+            // <motion.div className=' bg-[#2C1A1D] flex-1 flex justify-center items-center text-white text-3xl font-bold w-full flex-col md:px-10 md:py-7 p-5   '
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{
@@ -39,6 +39,7 @@ function Home() {
                 ease: "easeIn"
             }}
         >
+            <marquee className="text-[20px]"><span className="text-red-300">Update :</span> Working on Projects Section</marquee>
 
             {/* Section -1 */}
             <Header />
