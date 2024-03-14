@@ -31,7 +31,7 @@ const SkillsTab = () => {
   }
   return (
     <motion.div
-      className='flex justify-start  items-start text-white font-bold w-full h-ful  flex-col text-start md:ml-2  md:px-5 md:py-2 px-3 py-2  my-5  text-xl md:text-3xl border-l-2 rounded-sm border-gray-200'
+      className='flex justify-start  items-start text-white font-bold w-full   flex-col text-start md:ml-2  md:px-5 md:py-2 px-3 py-2  my-5  text-xl md:text-3xl border-l-2 rounded-sm border-gray-200'
     >
       <h1>Skills : </h1>
 
