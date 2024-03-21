@@ -8,30 +8,30 @@ import "slick-carousel/slick/slick-theme.css";
 // import { useRef } from "react";
 import { motion } from "framer-motion"
 
-import  style from "./project.module.css"
+import style from "./project.module.css"
 
 // TODO : Uninstall react-glider and cause using react-slick instead
-function SampleNextArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-        <div
-            className={className}
-            style={{ ...style, display: "block", background: "red" }}
-            onClick={onClick}
-        />
-    );
-}
+// function SampleNextArrow(props) {
+//     const { className, style, onClick } = props;
+//     return (
+//         <div
+//             className={className}
+//             style={{ ...style, display: "block", background: "red" }}
+//             onClick={onClick}
+//         />
+//     );
+// }
 
-function SamplePrevArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-        <div
-            className={className}
-            style={{ ...style, display: "block", background: "green" }}
-            onClick={onClick}
-        />
-    );
-}
+// function SamplePrevArrow(props) {
+//     const { className, style, onClick } = props;
+//     return (
+//         <div
+//             className={className}
+//             style={{ ...style, display: "block", background: "green" }}
+//             onClick={onClick}
+//         />
+//     );
+// }
 const Projects = () => {
 
     // let sliderRef = useRef(null);
@@ -48,14 +48,14 @@ const Projects = () => {
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 2500,
         // nextArrow:null
         // nextArrow: <SampleNextArrow />,
         // prevArrow: <SamplePrevArrow />,
         arrows: false,
         responsive: [
             {
-                breakpoint:2000 ,
+                breakpoint: 2000,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 1,
@@ -85,59 +85,59 @@ const Projects = () => {
     const projectData = [
         {
             id: 1,
-            projectName: "projectName",
-            projectImg: "projectImg",
-            projectHostedUrl: "projectHostedUrl",
-            projectGithubUrl: "projectGithubUrl"
+            projectName: "Shop Manager Dashboard",
+            projectImg: '/shopManager.png',
+            projectHostedUrl: "https://rudransh-fyntune-assignment.netlify.app/",
+            projectGithubUrl: "https://github.com/rudrcodes/fyntune-assignment"
         },
         {
             id: 2,
-            projectName: "projectName",
-            projectImg: "projectImg",
-            projectHostedUrl: "projectHostedUrl",
-            projectGithubUrl: "projectGithubUrl"
+            projectName: "Chart Visualizer",
+            projectImg: "/chartVisualizer.png",
+            projectHostedUrl: "https://rudransh-nioclass-assignment.netlify.app/",
+            projectGithubUrl: "https://github.com/rudrcodes/ChartJS-with-ReactJS"
         },
         {
             id: 3,
-            projectName: "projectName",
-            projectImg: "projectImg",
-            projectHostedUrl: "projectHostedUrl",
-            projectGithubUrl: "projectGithubUrl"
+            projectName: "Basic Chat App",
+            projectImg: "/chatApp.png",
+            projectHostedUrl: "https://rudransh-socket-chat-app.netlify.app/",
+            projectGithubUrl: "https://github.com/rudrcodes/Basic-Chat-App-Socket"
         },
         {
             id: 4,
-            projectName: "projectName",
-            projectImg: "projectImg",
-            projectHostedUrl: "projectHostedUrl",
-            projectGithubUrl: "projectGithubUrl"
+            projectName: "MiPlace: Hotel Website",
+            projectImg: "/miplaceApp.png",
+            projectHostedUrl: "https://miplace-app.onrender.com/",
+            projectGithubUrl: "https://github.com/aruljohnsonalmabetter/MiPlace-Frontend"
         },
         {
             id: 5,
-            projectName: "projectName",
-            projectImg: "projectImg",
-            projectHostedUrl: "projectHostedUrl",
-            projectGithubUrl: "projectGithubUrl"
+            projectName: "Notes App",
+            projectImg: "/notesApp.png",
+            projectHostedUrl: "https://rudransh-notes-app.netlify.app/",
+            projectGithubUrl: "https://github.com/rudrcodes/Notes-App-ReactJS-"
         },
         {
             id: 6,
-            projectName: "projectName",
-            projectImg: "projectImg",
-            projectHostedUrl: "projectHostedUrl",
-            projectGithubUrl: "projectGithubUrl"
+            projectName: "Pig Game: A cute short game ",
+            projectImg: "/pigGame.png",
+            projectHostedUrl: "https://rudrcodes.github.io/pig-game/",
+            projectGithubUrl: "https://github.com/rudrcodes/pig-game"
         },
         {
             id: 7,
-            projectName: "projectName",
-            projectImg: "projectImg",
-            projectHostedUrl: "projectHostedUrl",
-            projectGithubUrl: "projectGithubUrl"
+            projectName: "AI Article Summarizer",
+            projectImg: "/SummarizeApp.png",
+            projectHostedUrl: "https://rudransh-ai-summarizer.netlify.app/",
+            projectGithubUrl: "https://github.com/rudrcodes/AI-Article-Summarizer"
         },
         {
             id: 8,
-            projectName: "projectName",
-            projectImg: "projectImg",
-            projectHostedUrl: "projectHostedUrl",
-            projectGithubUrl: "projectGithubUrl"
+            projectName: "Calender Emulation App",
+            projectImg: "/calenderEmulator.png",
+            projectHostedUrl: "https://rudransh-aggarwal-assignment.netlify.app/",
+            projectGithubUrl: "https://github.com/rudrcodes/calender-emulation-app"
         },
 
     ]

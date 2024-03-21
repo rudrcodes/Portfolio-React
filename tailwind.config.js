@@ -17,6 +17,9 @@ export default {
       mono: 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
       serif: 'ui-serif, Georgia, Cambria, "Times New Roman", Times, serif',
     },
+    // fontSize: {
+    //   customSize: "18px",
+    // },
     // plugins: [require("@tailwindcss/aspect-ratio"), addVariablesForColors],
     plugins: [],
   },
