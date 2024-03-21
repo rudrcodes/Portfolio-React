@@ -14,7 +14,7 @@ const ProjectCard = (
         <motion.div
             className="
          bg-red-600 border-2 border-black p-3 rounded-lg flex justify-center items-center flex-col
-         hover:scale-105 transition-all delay-[40ms] duration-100 
+         hover:scale-105  transition-all delay-[40ms] duration-100  w-[400px]
         ">
             ProjectCard
             <img src={batman} alt="Projcet SS" className="h-40 w-56 " />

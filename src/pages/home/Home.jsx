@@ -4,6 +4,7 @@ import SkillsTab from "../../components/not-common/SkillsTab";
 import AboutComp from "../../components/not-common/AboutComp";
 import Header from "../../components/not-common/header/Header";
 import WorkEx from "../../components/WorkEx";
+import Projects from "../projects/Projects";
 
 
 // Rudransh Aggarwal ko inital load pe coh jo random chars vali animation h voh krunga, jisme random chars ate hn 
@@ -49,6 +50,7 @@ function Home() {
             <AboutComp />
 
             <SkillsTab />
+            <Projects />
 
             {/* <WorkEx /> */}
             {/* <motion.div className="md:w-[60%] w-full">

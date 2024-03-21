@@ -14,7 +14,7 @@ function App() {
     setPath(window.location.pathname)
     console.log(window.location.pathname)
   }, [path])
-  const pathColors = ["bg-[#2C1A1D]", "bg-green-800", "bg-red-900"]
+  // const pathColors = ["bg-[#2C1A1D]", "bg-green-800", "bg-red-900"]
 
   return (
     <motion.main
