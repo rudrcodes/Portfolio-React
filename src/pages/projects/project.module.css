@@ -1,0 +1,10 @@
+.mySlickDots li {
+    color: red !important;
+    font-size: 1rem !important;
+
+}
+
+.mySlickDots button::before {
+    color: gray !important;
+    font-size: 0.8rem !important;
+}

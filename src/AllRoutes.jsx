@@ -20,7 +20,7 @@ export const AllRoutes = () => {
         },
         {
             path: "*",
-            element: <>Error 404 || Page not found</>
+            element: <div className="text-2xl font-bold text-white md:text-4xl"> Error 404 || Page not found</div>
         },
     ];
 

@@ -8,6 +8,8 @@ import "slick-carousel/slick/slick-theme.css";
 // import { useRef } from "react";
 import { motion } from "framer-motion"
 
+import  style from "./project.module.css"
+
 // TODO : Uninstall react-glider and cause using react-slick instead
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
@@ -46,10 +48,38 @@ const Projects = () => {
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 1800,
+        autoplaySpeed: 2000,
         // nextArrow:null
-        nextArrow: <SampleNextArrow />,
-        prevArrow: <SamplePrevArrow />
+        // nextArrow: <SampleNextArrow />,
+        // prevArrow: <SamplePrevArrow />,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint:2000 ,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    initialSlide: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ],
+        dotsClass: `slick-dots ${style.mySlickDots}`
     };
     // abhi ke liye hard code , baad mein backend se fetch krunga
     const projectData = [
@@ -118,25 +148,25 @@ const Projects = () => {
         >
 
             <h1>Projects :</h1>
-                <Slider
-                    className="w-full flex justify-center items-center gap-3 "
-                    // className="w-full flex justify-center items-center gap-3 bg-yellow-400"
-                    // className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-7  mt-4"
+            <Slider
+                className="w-full "
+                // className="w-full flex justify-center items-center gap-3 bg-yellow-400"
+                // className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-7  mt-4"
 
-                    // ref={slider => (sliderRef = slider)} 
-                    {...settings}
-                >
-                    {projectData.length > 0 && projectData.map((project) => (
-                        <ProjectCard key={project.id}
-                            projid={project.id}
-                            projName={project.projectName}
-                            projectImg={project.projectImg}
-                            projectHostedUrl={project.projectHostedUrl}
-                            projectGithubUrl={project.projectGithubUrl}
+                // ref={slider => (sliderRef = slider)} 
+                {...settings}
+            >
+                {projectData.length > 0 && projectData.map((project) => (
+                    <ProjectCard key={project.id}
+                        projid={project.id}
+                        projName={project.projectName}
+                        projectImg={project.projectImg}
+                        projectHostedUrl={project.projectHostedUrl}
+                        projectGithubUrl={project.projectGithubUrl}
 
-                        />
-                    ))}
-                </Slider>
+                    />
+                ))}
+            </Slider>
             {/* <div style={{ textAlign: "center" }}>
                 <br/>
                 <button className="button" onClick={play}>
